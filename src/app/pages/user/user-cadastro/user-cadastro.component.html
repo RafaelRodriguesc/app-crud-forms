@@ -1,0 +1,79 @@
+<app-header></app-header>
+
+<h3 style="margin: 20px;">Cadastro | Usuários</h3>
+
+<form class="form-user bg-light">
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Nome:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome" style="width: 450px;" [(ngModel)]="formUsuario.nome" name="nome">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Telefone residencial:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000-0000" style="width: 200px;" [(ngModel)]="formUsuario.telefone.residencial" name="residencial">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Telefone caleular:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="(00) 00000-0000" style="width: 200px;" [(ngModel)]="formUsuario.telefone.celular" name="celular">
+</div>
+
+<hr>
+<div class="classeToApply">
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Cep:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="00.000-000" style="width: 200px;" [(ngModel)]="formUsuario.endereco.cep" name="cep" (blur)="getDadosCep($event)">
+  <small *ngIf="cepNaoEcontrado" style="color: red; font-style:italic">Cep não encontrado</small>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Rua:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Logradouro" style="width: 450px;"[(ngModel)]="formUsuario.endereco.logradouro" name="logradouro" disabled="">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Bairro:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu bairro" style="width: 200px;" [(ngModel)]="formUsuario.endereco.bairro" name="bairro" disabled>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Cidade:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua cidade" style="width: 200px;" [(ngModel)]="formUsuario.endereco.cidade" name="cidade" disabled>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Estado:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="UF" style="width: 50px;" [(ngModel)]="formUsuario.endereco.estado" name="estado" disabled="">
+</div>
+</div>
+
+<hr>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Email:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="example@gmail.com" style="width: 450px;" [(ngModel)]="formUsuario.email" name="email">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Senha:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua senha" style="width: 200px;" [(ngModel)]="formUsuario.senha" name="senha">
+</div>
+<legend class="col-form-label col-sm-2 pt-0">Acesso:</legend>
+<div class="col-sm-10">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="total" [(ngModel)]="formUsuario.acesso" name="acesso" checked>
+    <label class="form-check-label" for="gridRadios1">
+      Total
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="restrito" [(ngModel)]="formUsuario.acesso" name="acesso">
+    <label class="form-check-label" for="gridRadios2">
+      Restrito
+    </label>
+  </div>
+</div>
+<div class="row" style="margin-left: 30px; margin-top: 20px;">
+  <div class="col md-3" style="display: flex; flex-direction: row;">
+    <div class="col mt-3">
+      <button class="btn btn-success" (click)="goCadastro()">Salvar</button>
+      <button class="btn btn-danger" style="margin-left: 10px;" (click)="goBack()">Cancelar</button>
+    </div>
+  </div>
+</div>
+</form>
+
+<app-footer></app-footer>

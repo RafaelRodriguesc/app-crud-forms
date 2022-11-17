@@ -1,0 +1,80 @@
+<app-header></app-header>
+
+<h3 style="margin: 20px;">Cadastro | Clientes</h3>
+
+<form class="form-user bg-light">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Nome:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome"
+      style="width: 450px;" [(ngModel)]="formClient.nome" name="nome">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Telefone residencial:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000-0000" style="width: 200px;"
+      [(ngModel)]="formClient.telefone.residencial" name="residencial">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Telefone comercial:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="(00) 00000-0000"
+      style="width: 200px;" [(ngModel)]="formClient.telefone.comercial" name="comercial">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Telefone celular:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="(00) 00000-0000"
+      style="width: 200px;" [(ngModel)]="formClient.telefone.celular" name="celular">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Email:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="example@gmail.com"
+      style="width: 450px;" [(ngModel)]="formClient.email" name="email">
+  </div>
+
+  <hr>
+  <div class="classeToApply">
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Cep:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="00.000-000" style="width: 200px;"
+        [(ngModel)]="formClient.endereco.cep" name="cep" (blur)="getDadosCep($event)">
+      <small *ngIf="cepNaoEcontrado" style="color: red; font-style:italic">Cep não encontrado</small>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Rua:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Logradouro" style="width: 450px;"
+        [(ngModel)]="formClient.endereco.logradouro" name="logradouro" disabled="">
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Bairro:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu bairro"
+        style="width: 200px;" [(ngModel)]="formClient.endereco.bairro" name="bairro" disabled>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Cidade:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua cidade"
+        style="width: 200px;" [(ngModel)]="formClient.endereco.cidade" name="cidade" disabled>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Estado:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="UF" style="width: 50px;"
+        [(ngModel)]="formClient.endereco.estado" name="estado" disabled="">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">RG:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu RG"
+      style="width: 200px;" [(ngModel)]="formClient.documentos.rg" name="cidade">
+  </div>
+
+  <div class="row" style="margin-left: 30px; margin-top: 20px;">
+    <div class="col md-3" style="display: flex; flex-direction: row;">
+      <div class="col mt-3">
+        <button class="btn btn-success" (click)="goAltera()">Salvar</button>
+        <button class="btn btn-danger" style="margin-left: 10px;" (click)="goBack()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<app-footer></app-footer>

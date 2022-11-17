@@ -1,0 +1,87 @@
+
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://www.valoragregadoconsultores.com.br/images/negociacao/fornecedor.jpg" alt="">
+          <div class="card-body">
+            <h3 class="card-titlte">Fornecedores</h3>
+            <p class="card-text">Confira nossa lista de fornecedores.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-success" routerLink="/fornecedores">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://www.salesforce.com/content/dam/blogs/br/cinco-Dicas-para-fidelizar-clientes-com-CRM.jpg" height="200"alt="">
+          <div class="card-body">
+            <h3 class="card-title">Clientes</h3>
+            <p class="card-text">Confira nossa lista de clientes.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-success" routerLink="/client">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://www.growdigital.com.br/wp-content/uploads/2017/04/comportamento-usuario-internet-vender-mais.jpg" height="200" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Usuários</h3>
+            <p class="card-text">Confira nossa lista de usuários.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-success" routerLink="/user">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-title"><h1>Nossos Produtos:</h1></div>
+
+
+          <table class="table" style="margin: 0 auto 100px; width:80%;">
+
+            <thead class="table-success">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fabricante</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Processador</th>
+                <th scope="col">Ram</th>
+                <th scope="col">Placa de vídeo</th>
+                <th scope="col">Preço</th>
+                <th scope="col"></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of produtos">
+                <th scope="row">{{ item.id }}</th>
+                <td>{{ item.fabricante }}</td>
+                <td>{{ item.modelo }}</td>
+                <td>{{ item.processador }}</td>
+                <td>{{ item.ram }}</td>
+                <td>{{ item.placaVideo }}</td>
+                <td>{{ item.preco }}</td>
+
+                <td >
+                  <div style="float: right;">
+                  <button class="btn btn-danger" (click)="goDelete(item.id)">Excluir</button>
+
+                </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+

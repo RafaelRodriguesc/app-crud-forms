@@ -1,0 +1,43 @@
+<app-header></app-header>
+<h3 style="margin: 20px;">Lista de Fornecedores</h3>
+<div class="btn-cadastro">
+<button class="btn btn-success" style="margin: 100px; margin-left: 80%;" routerLink="/fornecedores-cadastro"> Cadastre um novo fornecedor</button>
+</div>
+<table class="table" style="margin: auto; width:80%;">
+
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Empresa</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Website</th>
+      <th scope="col">CNPJ</th>
+      <th scope="col">Cep</th>
+      <th scope="col">Endereco</th>
+      <th scope="col"></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of fornecedores">
+      <th scope="row">{{ item.id }}</th>
+      <td>{{ item.nome }}</td>
+      <td>{{ item.telefone.comercial }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.website }}</td>
+      <td>{{ item.documentos.cnpj}}</td>
+      <td>{{ item.endereco.cep }}</td>
+      <td>{{ item.endereco.logradouro + ", " + item.endereco.bairro + ", " + item.endereco.cidade + "-" + item.endereco.estado }}</td>
+      <td >
+        <div style="float: right;">
+        <button class="btn btn-success" style="margin-right: 5px;" (click)="goAltera(item.id)">Alterar</button>
+        <button class="btn btn-danger" (click)="goDelete(item.id)">Excluir</button>
+
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<app-footer></app-footer>

@@ -1,0 +1,411 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Rafael Rodrigues de Carvalho",
+      "telefone": {
+        "residencial": "36813675",
+        "celular": "997926349"
+      },
+      "email": "rafaelrodrigues.carvalho@yahoo.com.br",
+      "endereco": {
+        "cep": "12092700",
+        "rua": "Rua Orestes Francisco Vanone",
+        "numero": 0,
+        "cidade": "Taubaté",
+        "bairro": "Residencial Estoril",
+        "estado": "SP",
+        "logradouro": "Rua Orestes Francisco Vanone"
+      },
+      "acesso": "total",
+      "senha": "123"
+    },
+    {
+      "id": 2,
+      "nome": "Marcelo galvao",
+      "telefone": {
+        "residencial": "36826767",
+        "celular": "997927474"
+      },
+      "endereco": {
+        "cep": "12090360",
+        "rua": "Av. Imaculada Conceição",
+        "bairro": "Imaculada",
+        "cidade": "Taubaté",
+        "estado": "SP"
+      },
+      "email": "marcelo.galvao@hotmail.com",
+      "senha": "123",
+      "acesso": "restrito"
+    },
+    {
+      "id": 3,
+      "nome": "Julia Rodrigues",
+      "telefone": {
+        "residencial": "12991874586",
+        "celular": "12991874586"
+      },
+      "email": "julia_ccc@hotmail.com",
+      "endereco": {
+        "cep": "12092700",
+        "rua": "Rua Orestes Francisco Vanone",
+        "numero": 0,
+        "cidade": "Taubaté",
+        "bairro": "Residencial Estoril",
+        "estado": "SP",
+        "logradouro": "Rua Orestes Francisco Vanone"
+      },
+      "senha": "010",
+      "acesso": "total"
+    },
+    {
+      "nome": "Lucas Rodrigues",
+      "telefone": {
+        "residencial": "3688-2657",
+        "celular": "12 96152-4588"
+      },
+      "endereco": {
+        "cep": "08421-510",
+        "logradouro": "Avenida 24 de Agosto",
+        "bairro": "Conjunto Habitacional Fazenda do Carmo",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "lucas@hotmail.com",
+      "senha": "555",
+      "acesso": "restrito",
+      "id": 4
+    },
+    {
+      "nome": "João Pedro",
+      "telefone": {
+        "residencial": "3455-8819",
+        "celular": "12 98122-4428"
+      },
+      "endereco": {
+        "cep": "04863-140",
+        "logradouro": "Rua Abacaxi Natal",
+        "bairro": "Vila Natal",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "joao_pedro@hotmail.com",
+      "senha": "154",
+      "acesso": "restrito",
+      "id": 5
+    },
+    {
+      "nome": "Emerson",
+      "telefone": {
+        "residencial": "3655-2278",
+        "celular": "12 99781-3548"
+      },
+      "endereco": {
+        "cep": "02971-000",
+        "logradouro": "Rua Adele Zarzur",
+        "bairro": "Jardim São José (Zona Norte)",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "emerson@hotmail.com",
+      "senha": "555",
+      "acesso": "restrito",
+      "id": 6
+    },
+    {
+      "nome": "Luiz Gabriel",
+      "telefone": {
+        "residencial": "3666-5544",
+        "celular": "12 99864-5267"
+      },
+      "endereco": {
+        "cep": "03584-177",
+        "logradouro": "Travessa Agrippino de Paula",
+        "bairro": "Parque Savoy City",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "luiz.gab@yahoo.com.br",
+      "senha": "1579",
+      "acesso": "restrito",
+      "id": 7
+    },
+    {
+      "nome": "Manuela",
+      "telefone": {
+        "residencial": "3678-2100",
+        "celular": "12 96428-5561"
+      },
+      "endereco": {
+        "cep": "05856-540",
+        "logradouro": "Travessa Alcides Pereira dos Santos",
+        "bairro": "Cohab Monet",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "manu@gmail.com",
+      "senha": "888",
+      "acesso": "restrito",
+      "id": 8
+    },
+    {
+      "nome": "Breno",
+      "telefone": {
+        "residencial": "3666-9977",
+        "celular": "12 99465-9822"
+      },
+      "endereco": {
+        "cep": "03276-115",
+        "logradouro": "Rua Aldeia dos Índios",
+        "bairro": "Vila Ema",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "breno@outlook.com",
+      "senha": "123",
+      "acesso": "restrito",
+      "id": 9
+    },
+    {
+      "nome": "Matheus",
+      "telefone": {
+        "residencial": "3652-6418",
+        "celular": "12 99425-6148"
+      },
+      "endereco": {
+        "cep": "05869-227",
+        "logradouro": "Rua Alessandro Capece",
+        "bairro": "Jardim Sônia Inga",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "matheus_almeida@yahoo.com.br",
+      "senha": "457",
+      "acesso": "restrito",
+      "id": 10
+    }
+  ],
+  "clientes": [
+    {
+      "nome": "Regiane Galvão",
+      "telefone": {
+        "residencial": "3602-5028",
+        "comercial": "12 99780-2018",
+        "celular": "12 9855-8419"
+      },
+      "email": "regiane@outlook.com",
+      "endereco": {
+        "cep": "90520-540",
+        "logradouro": "Rua Afonso Taunay",
+        "bairro": "Boa Vista",
+        "cidade": "Porto Alegre",
+        "estado": "RS"
+      },
+      "documentos": {
+        "rg": "53248615-x",
+        "cpf": ""
+      },
+      "id": 3
+    },
+    {
+      "nome": "Douglas Augusto",
+      "telefone": {
+        "residencial": "3666-8715",
+        "comercial": "12 99851-6234",
+        "celular": "12 99856-2451"
+      },
+      "email": "douglas_augusto@yahoo.com.br",
+      "endereco": {
+        "cep": "88067-550",
+        "logradouro": "Servidão Alvim Aguedes Borges",
+        "bairro": "Pântano do Sul",
+        "cidade": "Florianópolis",
+        "estado": "SC"
+      },
+      "documentos": {
+        "rg": "2548123541-x",
+        "cpf": ""
+      },
+      "id": 4
+    },
+    {
+      "nome": "Rogers Anselmo ",
+      "telefone": {
+        "residencial": "36822354",
+        "comercial": "12 9771-1777",
+        "celular": "12 99782-3694"
+      },
+      "email": "rogers.anselmo@yahoo.com.br",
+      "endereco": {
+        "cep": "12092700",
+        "logradouro": "Rua Orestes Francisco Vanone",
+        "bairro": "Residencial Estoril",
+        "cidade": "Taubaté",
+        "estado": "SP"
+      },
+      "documentos": {
+        "rg": "52084910-x"
+      },
+      "id": 5
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": 1,
+      "nome": "Acer",
+      "telefone": {
+        "comercial": "981811975",
+        "celular": "9971801540"
+      },
+      "email": "acerbrasil.tech@gmail.com",
+      "website": "www.acer.com",
+      "endereco": {
+        "cep": "06460-000",
+        "logradouro": "Av. Tamboré",
+        "bairro": "Tamboré",
+        "cidade": "Barueri",
+        "estado": "SP"
+      },
+      "documentos": {
+        "cnpj": "1514131211",
+        "inscricao estadual": "0004"
+      }
+    },
+    {
+      "nome": "Dell",
+      "telefone": {
+        "comercial": "3681-1855",
+        "celular": "12 99452-6428"
+      },
+      "email": "dellbrasil.tech@gmail.com",
+      "website": "www.dell.com",
+      "endereco": {
+        "cep": "91450-155",
+        "logradouro": "Rua Abram Goldsztein",
+        "bairro": "Jardim Carvalho",
+        "cidade": "Porto Alegre",
+        "estado": "RS"
+      },
+      "documentos": {
+        "cnpj": "72.381.189/0001-10",
+        "inscricao": ""
+      },
+      "id": 2
+    },
+    {
+      "nome": "Samsung",
+      "telefone": {
+        "comercial": "3455-2855",
+        "celular": "12 99458-2567"
+      },
+      "email": "samsungbrasil.tech@gmail.com",
+      "website": "www.samsung.com",
+      "endereco": {
+        "cep": "09560-320",
+        "logradouro": "Rua Acanã",
+        "bairro": "Santa Maria",
+        "cidade": "São Caetano do Sul",
+        "estado": "SP"
+      },
+      "documentos": {
+        "cnpj": "00.280.273/0001-37",
+        "inscricao": ""
+      },
+      "id": 3
+    },
+    {
+      "nome": "Lenovo",
+      "telefone": {
+        "comercial": "3455-7899",
+        "celular": "12 99856-2219"
+      },
+      "email": "lenovobrasil.tech@gmail.com",
+      "website": "www.lenovo.com",
+      "endereco": {
+        "cep": "25086-540",
+        "logradouro": "Rua 10",
+        "bairro": "Parque das Missões",
+        "cidade": "Duque de Caxias",
+        "estado": "RJ"
+      },
+      "documentos": {
+        "cnpj": "07.275.920/0001-61",
+        "inscricao": ""
+      },
+      "id": 4
+    },
+    {
+      "nome": "Apple",
+      "telefone": {
+        "comercial": "3666-1991",
+        "celular": "12 99844-6556"
+      },
+      "email": "applebrasil.tech@icloud.com",
+      "website": "www.apple.com",
+      "endereco": {
+        "cep": "01311-912",
+        "logradouro": "Avenida Paulista",
+        "bairro": "Bela Vista",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "documentos": {
+        "cnpj": "00.623.904/0001-73",
+        "inscricao": ""
+      },
+      "id": 5
+    }
+  ],
+  "produtos": [
+    {
+      "id": 100,
+      "fabricante": "Acer",
+      "modelo": "Nitro 5",
+      "processador": "Core i5 9th",
+      "ram": "8gb",
+      "placaVideo": "Geforce RTX",
+      "resolucao": "Full hd",
+      "preco": 5.485
+    },
+    {
+      "fabricante": "Apple",
+      "modelo": "Macbook Pro 13",
+      "processador": "M1",
+      "ram": "8gb",
+      "placaVideo": "Radeon Pro W5700X",
+      "resolucao": "Ultra hd",
+      "preco": "11.999",
+      "id": 101
+    },
+    {
+      "fabricante": "Dell",
+      "modelo": "G15",
+      "processador": "AMD Ryzen™ 7 5800H",
+      "ram": "64 GB",
+      "placaVideo": "GEFORCE RTX™ 3060",
+      "resolucao": "Ultra hd",
+      "preco": "15.659",
+      "id": 102
+    },
+    {
+      "fabricante": "Samsung",
+      "modelo": "Samsung S-service",
+      "processador": "Intel® Celeron® 6305 Dual Core",
+      "ram": "4gb",
+      "placaVideo": "Não possui",
+      "resolucao": "Full HD",
+      "preco": "2.041",
+      "id": 103
+    },
+    {
+      "fabricante": "Lenovo",
+      "modelo": "ThinkPad E14",
+      "processador": " Core™ i5 11th",
+      "ram": "8 GB",
+      "placaVideo": " Intel UHD Graphics",
+      "resolucao": "Full HD",
+      "preco": "5.489",
+      "id": 104
+    }
+  ]
+}

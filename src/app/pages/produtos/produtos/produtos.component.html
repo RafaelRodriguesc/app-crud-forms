@@ -1,0 +1,69 @@
+<app-header></app-header>
+
+<h3 style="margin: 20px;">Cadastro | Produtos</h3>
+
+<form class="form-user bg-light" [formGroup]="produtos" (ngSubmit)="salvar()">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Fabricante:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" style="width: 200px;"
+      formControlName="fabricante">
+    <div *ngIf="produtos.get('fabricante')?.errors?.['required'] && produtos.get('fabricante')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Modelo:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" style="width: 200px;"
+      formControlName="modelo">
+    <div *ngIf="produtos.get('modelo')?.errors?.['required'] && produtos.get('modelo')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Processador:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" style="width: 200px;"
+      formControlName="processador">
+    <div *ngIf="produtos.get('processador')?.errors?.['required'] && produtos.get('processador')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Ram:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" style="width: 200px;"
+      formControlName="ram">
+    <div *ngIf="produtos.get('ram')?.errors?.['required'] && produtos.get('ram')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Placa de video:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" style="width: 200px;"
+      formControlName="placaVideo">
+    <div *ngIf="produtos.get('placaVideo')?.errors?.['required'] && produtos.get('placaVideo')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+  </div>
+  <div class="classeToApply">
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Resolução:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" style="width: 200px;"
+        formControlName="resolucao">
+      <div *ngIf="produtos.get('resolucao')?.errors?.['required'] && produtos.get('resolucao')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Preço:</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" style="width: 200px;"
+        formControlName="preco">
+      <div *ngIf="produtos.get('preco')?.errors?.['required'] && produtos.get('preco')?.touched">
+      <small style="font-style:italic; color:red;">Este campo deve ser preenchido</small>
+    </div>
+    </div>
+    <button class="btn btn-success" type="submit" [disabled]="!produtos.valid">Salvar</button>
+    <button class="btn btn-danger" style="margin-left: 10px;">Cancelar</button>
+  </div>
+</form>
+
+<app-footer></app-footer>

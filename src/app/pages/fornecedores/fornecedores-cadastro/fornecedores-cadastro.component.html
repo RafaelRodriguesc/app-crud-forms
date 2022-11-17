@@ -1,0 +1,71 @@
+<app-header></app-header>
+
+<h3 style="margin: 20px;">Cadastro | Fornecedores</h3>
+
+<form class="form-user bg-light">
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Empresa:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o nome da empresa" style="width: 450px;" [(ngModel)]="formFornecedores.nome" name="nome">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Telefone Comercial:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000-0000" style="width: 200px;" [(ngModel)]="formFornecedores.telefone.comercial" name="comercial">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Telefone Celular:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000-0000" style="width: 200px;" [(ngModel)]="formFornecedores.telefone.celular" name="celular">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Email:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com" style="width: 200px;" [(ngModel)]="formFornecedores.email" name="email">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Website:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="www.example.com" style="width: 450px;" [(ngModel)]="formFornecedores.website" name="website">
+</div>
+
+<hr>
+<div class="classeToApply">
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Cep:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="00.000-000" style="width: 200px;" [(ngModel)]="formFornecedores.endereco.cep" name="cep" (blur)="getDadosCep($event)">
+  <small *ngIf="cepNaoEcontrado" style="color: red; font-style:italic">Cep não encontrado</small>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Rua:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Logradouro" style="width: 450px;"[(ngModel)]="formFornecedores.endereco.logradouro" name="logradouro" disabled="">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Bairro:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu bairro" style="width: 200px;" [(ngModel)]="formFornecedores.endereco.bairro" name="bairro" disabled>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Cidade:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua cidade" style="width: 200px;" [(ngModel)]="formFornecedores.endereco.cidade" name="cidade" disabled>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Estado:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="UF" style="width: 50px;" [(ngModel)]="formFornecedores.endereco.estado" name="estado" disabled="">
+</div>
+</div>
+
+<hr>
+
+
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">CNPJ:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua senha" style="width: 200px;" [(ngModel)]="formFornecedores.documentos.cnpj" name="senha">
+</div>
+
+<div class="row" style="margin-left: 30px; margin-top: 20px;">
+  <div class="col md-3" style="display: flex; flex-direction: row;">
+    <div class="col mt-3">
+      <button class="btn btn-success" (click)="goCadastro()">Salvar</button>
+      <button class="btn btn-danger" style="margin-left: 10px;" (click)="goBack()">Cancelar</button>
+    </div>
+  </div>
+</div>
+</form>
+
+<app-footer></app-footer>
+

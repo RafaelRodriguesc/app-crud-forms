@@ -1,0 +1,18 @@
+.progress {
+  margin-bottom: 10px;
+}
+
+
+.product-title {
+  margin: 100px 0px;
+  width: 100%;
+}
+
+.product-title h1 {
+  font-size: 70px;
+  font-family: sans-serif;
+  color: green;
+  font-weight: bolder;
+  text-shadow: 3px 2px 1px rgb(38, 57, 38);
+}
+
